@@ -34,6 +34,5 @@ WORKDIR /www/wwwroot
 CMD /code/entrypoint.sh
 EXPOSE 10808 888 21 20 443 80
 
-VOLUME ["/www/wwwroot","/www/wwwroot"]
 
 HEALTHCHECK --interval=5s --timeout=3s CMD curl -fs http://localhost:10808/xeu7TwHvtcfuj || exit 1
